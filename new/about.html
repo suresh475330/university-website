@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university of madras nemmeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d83632d9e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--sub-header------>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="logo321.png" alt="ff"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+    <!------about us contact------->
+
+    <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+              <h1>We are the best university</h1>
+              <p> The University of Madras is a public state university in Chennai, Tamil Nadu, India. Established in 1857, it is one of the oldest universities in India, incorporated by an Act of Legislative Council of India under the British government</p>
+              <a href="https://www.unom.ac.in/index.php?route=common/home" class="hero-btn red-btn" target="black">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+             <img src="about.jpg" alt="ff">
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+   
+ 
+
+ 
+
+<!------footer------>
+
+<section class="footer">
+    <h4>aboust us</h4>
+     <P>Hello everyone, i create a website by our college information share to everyone a good thought oney, no bad intention<br>Thankyou for visite my website</P>
+     <div class="icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram">suresh__sk__07</i>
+        <i class="fa-brands fa-linkedin"></i>
+     </div>
+     <h5>Made with  <i class="fa fa-heart-o"></i> by suresh</h5>
+</section>
+
+<!----javascript for toggle menu  -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    
+</body>
+</html>

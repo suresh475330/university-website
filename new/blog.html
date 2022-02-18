@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university of madras nemmeli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d83632d9e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header------>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="logo321.png" alt="ff"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Gallery</h1>
+    </section>
+
+ <!------blog page contant-------->
+
+<div class="full-img" id="fullimgbox">
+    <img src="c1.jpg" alt="collage photo" id="fullimg">
+    <span onclick="closefullimg()">X</span>
+</div>
+
+
+
+ <div class="img-gallary">
+     <img src="c1.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c2.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c3.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c4.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c5.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c6.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c7.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c8.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c9.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c10.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c11.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c12.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c13.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c14.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c15.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c16.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+     <img src="c17.jpg" alt="collage photo" onclick="openfullimg(this.src)">
+ </div>
+
+ <script>
+
+  var fullimgbox = document.getElementById("fullimgbox")
+  var fullimg = document.getElementById("fullimg")
+
+  function openfullimg(pic){
+      fullimgbox.style.display = "flex";
+      fullimg.src = pic
+  }
+  function closefullimg(){
+      fullimgbox.style.display = "none";
+  }
+
+
+ </script>
+ 
+
+
+
+
+<!------footer------>
+
+<section class="footer">
+    <h4>aboust us</h4>
+     <P>Hello everyone, i create a website by our college information share to everyone a good thought oney, no bad intention<br>Thankyou for visite my website</P>
+     <div class="icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram">suresh__sk__07</i>
+        <i class="fa-brands fa-linkedin"></i>
+     </div>
+     <h5>Made with  <i class="fa fa-heart-o"></i> by suresh</h5>
+</section>
+
+<!----javascript for toggle menu  -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    
+</body>
+</html>
